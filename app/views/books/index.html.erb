@@ -5,27 +5,29 @@
     </head>
 
     <body>
-        <header>
+        <header class="books-header">
             <h1>Books</h1>
         </header>
 
         <div class="column-box">
-            <p><strong>Title</strong></p>
-            <p><strong>Body</strong></p>
+            <h5><strong>Title</strong></h5>
+            <h5><strong>Body</strong></h5>
         </div>
 
          <div class="list-wrap">
             <% @books.each do |book| %>
-            <div class="list-text">
-                <p><%= book.title %></p>
-                <p><%= book.body %></p>
+          <div class="record">
+               
+                <p class="text-title"><%= book.title %></p>
+                <p class="text-body"><%= book.body %></p>
+    　　　　
+    　　　　<div class="link-list">
+                <%= link_to "Show", book_path(book.id) %>
+                <%= link_to "Edit", edit_book_path(book.id) %>
+                <%= link_to "Destroy", book_path(book.id) %>
             </div>
-
-            <div class="list-link">
-                <%= link_to "Show", show_path(book.id) %>
-                <%= link_to "Edit", edit_path(book.id) %>
-                <%= link_to "Destroy", destroy_path(book.id) %>
-            </div>
+           </div>
+          </div>
             <% end %>
         </div>
 
