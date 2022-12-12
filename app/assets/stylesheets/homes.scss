@@ -16,7 +16,12 @@ header{
   margin-left: 40px;
 }
 
-p:nth-child(2){
+.top-text:nth-child(2){
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.top-text{
+  display: block;
+  margin-left: 40px;
 }

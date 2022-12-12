@@ -1,25 +1,30 @@
 class BooksController < ApplicationController
-  
-  def create
-  end 
-  
+
   def index
-  end 
-  
-  def show
+    @books=Book.all
+    @book=Book.new
   end
   
+  def create
+    book=Book.new(book_params)
+    book.save
+
+  end
+
+  def show
+  end
+
   def edit
-  end 
-  
+  end
+
   def update
-  end 
-  
+  end
+
   def destroy
-  end 
-  
+  end
+
   private
-  def list_params
-  params.repuire(:list).permit(:title, :body)
-  end 
+  def book_params
+  params.require(:book).permit(:title, :body)
+  end
 end
