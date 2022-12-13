@@ -7,47 +7,19 @@
   box-sizing: border-box;
 }
 
-.books-header{
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 0;
+//showレイアウト
+.title-box{
+  margin-top: 30px;
+  margin-left: 40px;
 }
 
-
-
-.column-box{
-  height: 50px;
+.body-box{
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
-h5{
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 80px;
-}
-
-h5:nth-child(2){
-  margin-left: 150px;
-}
-
-.text-box{
-  display: inline-block;
-  margin-right: 400px;
-}
-
-.text-title{
-  display: inline-block;
+.link-box{
+  margin-top: 30px;
   margin-left: 20px;
 }
-
-.text-body{
-  display: inline-block;
-  margin-left: 80px;
-  padding-right: 80px;
-}
-
-.link-list{
-  width: 200px;
-  display: inline-block;
-  text-align: right;
-}
-
+//ここまで

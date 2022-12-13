@@ -1,1 +1,23 @@
-<h1>詳細画面</h1>
+<!DOCTYPE html>
+<html>
+
+
+    <body>
+        <div>
+        <%= flash[:notice] %>
+        </div>
+
+        <div class="title-box">
+        <strong>Title:</strong><%= @book.title %>
+        </div>
+
+        <div class="body-box">
+        <strong>Body:</strong><%= @book.body %>
+        </div>
+
+        <%= link_to "Edit", edit_book_path(@book.id) %>
+        |
+        <%= link_to "Back", "/books" %>
+
+    </body>
+</html>
